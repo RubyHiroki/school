@@ -1,0 +1,15 @@
+<%= form_for @subject do |f| %>
+    <p>
+    <%= f.label(:department, "名称") %>
+    <%= f.text_field :department %>
+    </p>
+    <p>
+    <%= f.label :content, "説明" %>
+    <%= f.text_field :content %>
+    </p>
+    <p>
+    <%= f.label :teacher, "担当教師" %>
+    <%= f.text_field :teacher %>
+    </p>
+    <%= f.submit "登録" %>
+<% end %>

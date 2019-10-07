@@ -1,0 +1,2732 @@
+Started GET "/" for ::1 at 2019-10-03 16:53:29 +0900
+Processing by Rails::WelcomeController#index as HTML
+  Rendering C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb (30.8ms)
+Completed 200 OK in 153ms (Views: 125.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 16:55:50 +0900
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 4501ms (Views: 4495.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 16:56:36 +0900
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 143ms (Views: 139.5ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ bin/rails:4
+  [1m[35m (126.3ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:4
+  [1m[35m (56.7ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+Migrating to CreateSubjects (20191003075848)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:4
+  [1m[35m (4.5ms)[0m  [1m[35mCREATE TABLE "subjects" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20191003075848_create_subjects.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20191003075848"]]
+  ↳ bin/rails:4
+  [1m[35m (48.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:4
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::InternalMetadata Create (4.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-10-03 08:01:45.603199"], ["updated_at", "2019-10-03 08:01:45.603199"]]
+  ↳ bin/rails:4
+  [1m[35m (45.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:4
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:4
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:4
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ bin/rails:4
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ bin/rails:4
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ bin/rails:4
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ bin/rails:4
+  [1m[35m (49.6ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:4
+  [1m[35m (50.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+Migrating to CreateSubjects (20191003075848)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:4
+  [1m[35m (4.9ms)[0m  [1m[35mCREATE TABLE "subjects" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "department" varchar(20) NOT NULL, "content" text(300) NOT NULL, "teacher" varchar(30), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20191003075848_create_subjects.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20191003075848"]]
+  ↳ bin/rails:4
+  [1m[35m (43.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:4
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::InternalMetadata Create (4.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-10-03 08:13:42.369950"], ["updated_at", "2019-10-03 08:13:42.369950"]]
+  ↳ bin/rails:4
+  [1m[35m (39.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mSubject Create (3.9ms)[0m  [1m[32mINSERT INTO "subjects" ("department", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["department", "IT学科"], ["content", "とても明るくて楽しいクラスです。"], ["created_at", "2019-10-03 08:13:59.150718"], ["updated_at", "2019-10-03 08:13:59.150718"]]
+  ↳ db/seeds.rb:9
+  [1m[35m (43.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mSubject Create (4.4ms)[0m  [1m[32mINSERT INTO "subjects" ("department", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["department", "現代ビジネス学科"], ["content", "クラスの仲が良く楽しいクラスです。"], ["created_at", "2019-10-03 08:13:59.201229"], ["updated_at", "2019-10-03 08:13:59.201229"]]
+  ↳ db/seeds.rb:10
+  [1m[35m (42.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.7ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[36mSubject Create (4.1ms)[0m  [1m[32mINSERT INTO "subjects" ("department", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["department", "動物学科"], ["content", "動物との触れ合いが多く楽しいクラスです。"], ["created_at", "2019-10-03 08:13:59.249611"], ["updated_at", "2019-10-03 08:13:59.249611"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (41.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[36mSubject Load (3.8ms)[0m  [1m[34mSELECT  "subjects".* FROM "subjects" LIMIT ?[0m  [["LIMIT", 11]]
+Started GET "/" for ::1 at 2019-10-03 17:20:21 +0900
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (181.7ms)
+Completed 500 Internal Server Error in 203ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `index_path' for #<#<Class:0x00000000085c7468>:0x00000000085d9118>
+Did you mean?  video_path):
+    1: <h1>school アプリ</h1>
+    2: 
+    3: <%= link_to "学科一覧へ", index_path %>
+  
+app/views/top/index.html.erb:3:in `_app_views_top_index_html_erb__141657429_70066960'
+Started GET "/" for ::1 at 2019-10-03 17:20:32 +0900
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (202.1ms)
+Completed 500 Internal Server Error in 229ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `subject_index_path' for #<#<Class:0x00000000085c7468>:0x000000000b57a138>
+Did you mean?  subjects_index_path
+               subjects_new_path
+               subjects_edit_path
+               subjects_index_url):
+    1: <h1>school アプリ</h1>
+    2: 
+    3: <%= link_to "学科一覧へ", subject_index_path %>
+  
+app/views/top/index.html.erb:3:in `_app_views_top_index_html_erb__141657429_95147180'
+Started GET "/" for ::1 at 2019-10-03 17:20:41 +0900
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 378ms (Views: 375.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/subjects/index" for ::1 at 2019-10-03 17:20:43 +0900
+Processing by SubjectsController#index as HTML
+  Rendering subjects/index.html.erb within layouts/application
+  Rendered subjects/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 79ms (Views: 69.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/subjects/index" for ::1 at 2019-10-03 17:21:20 +0900
+Processing by SubjectsController#index as HTML
+  Rendering subjects/index.html.erb within layouts/application
+  Rendered subjects/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 339ms (Views: 335.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/subjects/index" for ::1 at 2019-10-03 17:21:35 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/subjects/index"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/subjects/index" for ::1 at 2019-10-03 17:21:39 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/subjects/index"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/subjects/index" for ::1 at 2019-10-03 17:22:04 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/subjects/index"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/subjects/index" for ::1 at 2019-10-03 17:22:22 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/subjects/index"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/subjects/index" for ::1 at 2019-10-03 17:22:28 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/subjects/index"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/subjects/index" for ::1 at 2019-10-03 17:22:35 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/subjects/index"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/subjects/index" for ::1 at 2019-10-03 17:22:37 +0900
+Processing by SubjectsController#index as HTML
+  Rendering subjects/index.html.erb within layouts/application
+  Rendered subjects/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 371ms (Views: 361.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/subjects/index" for ::1 at 2019-10-03 17:23:38 +0900
+Processing by SubjectsController#index as HTML
+  Rendering subjects/index.html.erb within layouts/application
+  Rendered subjects/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 131ms (Views: 128.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/subjects/index" for ::1 at 2019-10-03 17:24:22 +0900
+Processing by SubjectsController#index as HTML
+  Rendering subjects/index.html.erb within layouts/application
+  Rendered subjects/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 375ms (Views: 372.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/subjects/new" for ::1 at 2019-10-03 17:24:24 +0900
+Processing by SubjectsController#new as HTML
+  Rendering subjects/new.html.erb within layouts/application
+  Rendered subjects/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 808ms (Views: 803.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/subjects/index" for ::1 at 2019-10-03 17:30:31 +0900
+Processing by SubjectsController#index as HTML
+  Rendering subjects/index.html.erb within layouts/application
+  [1m[36mSubject Load (0.2ms)[0m  [1m[34mSELECT "subjects".* FROM "subjects"[0m
+  ↳ app/views/subjects/index.html.erb:11
+  Rendered subjects/index.html.erb within layouts/application (202.0ms)
+Completed 500 Internal Server Error in 212ms (ActiveRecord: 1.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `department' for #<#<Class:0x0000000009210a30>:0x000000000e20c188>):
+     9:   </tr>
+    10:   <tr>
+    11:     <% @subjects.each do |subject| %>
+    12:       <td><%= department %></td>
+    13:       <td></td>
+    14:       <td></td>
+    15:       <td></td>
+  
+app/views/subjects/index.html.erb:12:in `block in _app_views_subjects_index_html_erb__660869315_118514920'
+app/views/subjects/index.html.erb:11:in `_app_views_subjects_index_html_erb__660869315_118514920'
+  [1m[36mSubject Load (0.2ms)[0m  [1m[34mSELECT  "subjects".* FROM "subjects" WHERE "subjects"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mSubject Load (0.2ms)[0m  [1m[34mSELECT  "subjects".* FROM "subjects" WHERE "subjects"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Started GET "/subjects/index" for ::1 at 2019-10-03 17:33:48 +0900
+Processing by SubjectsController#index as HTML
+  Rendering subjects/index.html.erb within layouts/application
+  [1m[36mSubject Load (0.2ms)[0m  [1m[34mSELECT "subjects".* FROM "subjects"[0m
+  ↳ app/views/subjects/index.html.erb:11
+  Rendered subjects/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 142ms (Views: 138.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/subjects/index" for ::1 at 2019-10-03 17:34:38 +0900
+Processing by SubjectsController#index as HTML
+  Rendering subjects/index.html.erb within layouts/application
+  [1m[36mSubject Load (0.2ms)[0m  [1m[34mSELECT "subjects".* FROM "subjects"[0m
+  ↳ app/views/subjects/index.html.erb:11
+  Rendered subjects/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 75ms (Views: 72.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/subjects/index" for ::1 at 2019-10-03 17:35:05 +0900
+Processing by SubjectsController#index as HTML
+  Rendering subjects/index.html.erb within layouts/application
+  [1m[36mSubject Load (0.2ms)[0m  [1m[34mSELECT "subjects".* FROM "subjects"[0m
+  ↳ app/views/subjects/index.html.erb:10
+  Rendered subjects/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 427ms (Views: 423.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/subjects/index" for ::1 at 2019-10-03 17:35:35 +0900
+Processing by SubjectsController#index as HTML
+  Rendering subjects/index.html.erb within layouts/application
+  Rendered subjects/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 555ms (Views: 91.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/subjects/index" for ::1 at 2019-10-03 17:35:37 +0900
+Processing by SubjectsController#index as HTML
+  Rendering subjects/index.html.erb within layouts/application
+  [1m[36mSubject Load (0.2ms)[0m  [1m[34mSELECT "subjects".* FROM "subjects"[0m
+  ↳ app/views/subjects/index.html.erb:10
+  Rendered subjects/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 111ms (Views: 108.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/subjects/index" for ::1 at 2019-10-03 17:36:15 +0900
+Processing by SubjectsController#index as HTML
+  Rendering subjects/index.html.erb within layouts/application
+  [1m[36mSubject Load (0.2ms)[0m  [1m[34mSELECT "subjects".* FROM "subjects"[0m
+  ↳ app/views/subjects/index.html.erb:10
+  Rendered subjects/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 866ms (Views: 862.6ms | ActiveRecord: 0.2ms)
+
+
+  [1m[36mSubject Destroy (111.7ms)[0m  [1m[31mDELETE FROM "subjects"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mSubject Create (4.0ms)[0m  [1m[32mINSERT INTO "subjects" ("department", "content", "teacher", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["department", "IT学科"], ["content", "とても明るくて楽しいクラスです。"], ["teacher", "井川先生"], ["created_at", "2019-10-03 08:38:50.024041"], ["updated_at", "2019-10-03 08:38:50.024041"]]
+  ↳ db/seeds.rb:9
+  [1m[35m (43.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mSubject Create (5.7ms)[0m  [1m[32mINSERT INTO "subjects" ("department", "content", "teacher", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["department", "現代ビジネス学科"], ["content", "クラスの仲が良く楽しいクラスです。"], ["teacher", "中田先生"], ["created_at", "2019-10-03 08:38:50.073799"], ["updated_at", "2019-10-03 08:38:50.073799"]]
+  ↳ db/seeds.rb:10
+  [1m[35m (42.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[36mSubject Create (4.3ms)[0m  [1m[32mINSERT INTO "subjects" ("department", "content", "teacher", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["department", "動物学科"], ["content", "動物との触れ合いが多く楽しいクラスです。"], ["teacher", "岸川先生"], ["created_at", "2019-10-03 08:38:50.123682"], ["updated_at", "2019-10-03 08:38:50.123682"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (41.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:11
+Started GET "/subjects/index" for ::1 at 2019-10-03 17:39:14 +0900
+Processing by SubjectsController#index as HTML
+  Rendering subjects/index.html.erb within layouts/application
+  [1m[36mSubject Load (0.2ms)[0m  [1m[34mSELECT "subjects".* FROM "subjects"[0m
+  ↳ app/views/subjects/index.html.erb:10
+  Rendered subjects/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 143ms (Views: 140.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/subjects/index" for ::1 at 2019-10-03 17:40:59 +0900
+  
+NoMethodError (undefined method `　resources' for #<ActionDispatch::Routing::Mapper:0x000000000dbc9640>
+Did you mean?  resources
+               resource):
+  
+config/routes.rb:6:in `block in <top (required)>'
+config/routes.rb:1:in `<top (required)>'
+Started GET "/subjects/index" for ::1 at 2019-10-03 17:41:07 +0900
+Processing by SubjectsController#index as HTML
+  Rendering subjects/index.html.erb within layouts/application
+  [1m[36mSubject Load (0.2ms)[0m  [1m[34mSELECT "subjects".* FROM "subjects"[0m
+  ↳ app/views/subjects/index.html.erb:10
+  Rendered subjects/index.html.erb within layouts/application (206.8ms)
+Completed 500 Internal Server Error in 233ms (ActiveRecord: 1.1ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `root_path' for #<#<Class:0x00000000073a3570>:0x0000000006673a08>
+Did you mean?  font_path):
+    18:       </tr>
+    19:     <% end %>
+    20: </table>
+    21: <%= link_to "トップへ戻る", root_path %>
+  
+app/views/subjects/index.html.erb:21:in `_app_views_subjects_index_html_erb__660869315_60399980'
+Started GET "/subjects/index" for ::1 at 2019-10-03 17:42:07 +0900
+  
+NoMethodError (undefined method `　resources' for #<ActionDispatch::Routing::Mapper:0x000000000baa80d8>
+Did you mean?  resources
+               resource):
+  
+config/routes.rb:6:in `block in <top (required)>'
+config/routes.rb:1:in `<top (required)>'
+Started GET "/subjects/index" for ::1 at 2019-10-03 17:42:08 +0900
+  
+NoMethodError (undefined method `　resources' for #<ActionDispatch::Routing::Mapper:0x000000000db4f728>
+Did you mean?  resources
+               resource):
+  
+config/routes.rb:6:in `block in <top (required)>'
+config/routes.rb:1:in `<top (required)>'
+Started GET "/subjects/index" for ::1 at 2019-10-03 17:42:09 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/subjects/index"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/subjects/index" for ::1 at 2019-10-03 17:42:10 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/subjects/index"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/subjects/index" for ::1 at 2019-10-03 17:42:11 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/subjects/index"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/subjects/index" for ::1 at 2019-10-03 17:42:12 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/subjects/index"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/subjects/index" for ::1 at 2019-10-03 17:42:26 +0900
+  
+NoMethodError (undefined method `　resources' for #<ActionDispatch::Routing::Mapper:0x000000000dd6aaa8>
+Did you mean?  resources
+               resource):
+  
+config/routes.rb:4:in `block in <top (required)>'
+config/routes.rb:1:in `<top (required)>'
+Started GET "/subjects/index" for ::1 at 2019-10-03 17:42:28 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/subjects/index"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/subjects/index" for ::1 at 2019-10-03 17:42:30 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/subjects/index"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/subjects/index" for ::1 at 2019-10-03 17:43:03 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/subjects/index"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2019-10-03 17:43:11 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2019-10-03 17:43:13 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2019-10-03 17:45:44 +0900
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (188.1ms)
+Completed 500 Internal Server Error in 210ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `subjects_index_path' for #<#<Class:0x000000000857ec90>:0x00000000085989b0>
+Did you mean?  subjects_path):
+    1: <h1>school アプリ</h1>
+    2: 
+    3: <%= link_to "学科一覧へ", subjects_index_path %>
+  
+app/views/top/index.html.erb:3:in `_app_views_top_index_html_erb__40680069_69968480'
+Started GET "/" for ::1 at 2019-10-03 17:46:51 +0900
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 614ms (Views: 610.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/subjects" for ::1 at 2019-10-03 17:46:53 +0900
+Processing by SubjectsController#index as HTML
+  Rendering subjects/index.html.erb within layouts/application
+  [1m[36mSubject Load (0.4ms)[0m  [1m[34mSELECT  "subjects".* FROM "subjects" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Subject Load (0.0ms)[0m  [1m[34mSELECT  "subjects".* FROM "subjects" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Subject Load (0.0ms)[0m  [1m[34mSELECT  "subjects".* FROM "subjects" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Subject Load (0.0ms)[0m  [1m[34mSELECT  "subjects".* FROM "subjects" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Subject Load (0.0ms)[0m  [1m[34mSELECT  "subjects".* FROM "subjects" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Subject Load (0.0ms)[0m  [1m[34mSELECT  "subjects".* FROM "subjects" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Subject Load (0.0ms)[0m  [1m[34mSELECT  "subjects".* FROM "subjects" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Subject Load (0.0ms)[0m  [1m[34mSELECT  "subjects".* FROM "subjects" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendered subjects/index.html.erb within layouts/application (246.3ms)
+Completed 500 Internal Server Error in 263ms (ActiveRecord: 1.4ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `subjects_new_path' for #<#<Class:0x000000000becb638>:0x000000000cc3a058>
+Did you mean?  subjects_path
+               subject_path):
+    1: <h1>学科一覧</h1>
+    2: <%= link_to "新規登録", subjects_new_path %>
+    3: <table border="1">
+    4:   <tr>
+    5:     <th>学科</th>
+  
+app/views/subjects/index.html.erb:2:in `_app_views_subjects_index_html_erb__789870860_99996220'
+Started GET "/subjects" for ::1 at 2019-10-03 17:47:51 +0900
+Processing by SubjectsController#index as HTML
+  Rendering subjects/index.html.erb within layouts/application
+  [1m[36mSubject Load (0.3ms)[0m  [1m[34mSELECT "subjects".* FROM "subjects"[0m
+  ↳ app/views/subjects/index.html.erb:10
+  Rendered subjects/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 842ms (Views: 838.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/subjects/new" for ::1 at 2019-10-03 17:47:53 +0900
+Processing by SubjectsController#new as HTML
+  Rendering subjects/new.html.erb within layouts/application
+  Rendered subjects/new.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 74ms (Views: 70.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 17:47:57 +0900
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 273ms (Views: 269.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/subjects" for ::1 at 2019-10-03 17:49:44 +0900
+Processing by SubjectsController#index as HTML
+  Rendering subjects/index.html.erb within layouts/application
+  [1m[36mSubject Load (0.2ms)[0m  [1m[34mSELECT "subjects".* FROM "subjects"[0m
+  ↳ app/views/subjects/index.html.erb:10
+  Rendered subjects/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 797ms (Views: 793.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/subjects" for ::1 at 2019-10-03 17:49:52 +0900
+Processing by SubjectsController#index as HTML
+  Rendering subjects/index.html.erb within layouts/application
+  [1m[36mSubject Load (0.2ms)[0m  [1m[34mSELECT "subjects".* FROM "subjects"[0m
+  ↳ app/views/subjects/index.html.erb:10
+  Rendered subjects/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 79ms (Views: 76.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/subjects" for ::1 at 2019-10-03 17:49:53 +0900
+Processing by SubjectsController#index as HTML
+  Rendering subjects/index.html.erb within layouts/application
+  [1m[36mSubject Load (0.2ms)[0m  [1m[34mSELECT "subjects".* FROM "subjects"[0m
+  ↳ app/views/subjects/index.html.erb:10
+  Rendered subjects/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 145ms (Views: 141.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/subjects" for ::1 at 2019-10-03 17:50:02 +0900
+Processing by SubjectsController#index as HTML
+  Rendering subjects/index.html.erb within layouts/application
+  [1m[36mSubject Load (0.2ms)[0m  [1m[34mSELECT "subjects".* FROM "subjects"[0m
+  ↳ app/views/subjects/index.html.erb:10
+  Rendered subjects/index.html.erb within layouts/application (250.7ms)
+Completed 500 Internal Server Error in 263ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `show_subject_path' for #<#<Class:0x000000000becb638>:0x000000000cb8c368>
+Did you mean?  new_subject_path
+               subject_path):
+    13:       <td><%= subject.content %></td>
+    14:       <td><%= subject.teacher %></td>
+    15:       <td>
+    16:         <%= link_to "詳細", show_subject_path %>
+    17:       </td>
+    18:       </tr>
+    19:     <% end %>
+  
+app/views/subjects/index.html.erb:16:in `block in _app_views_subjects_index_html_erb__789870860_106723840'
+app/views/subjects/index.html.erb:10:in `_app_views_subjects_index_html_erb__789870860_106723840'
+Started GET "/subjects" for ::1 at 2019-10-03 17:50:17 +0900
+Processing by SubjectsController#index as HTML
+  Rendering subjects/index.html.erb within layouts/application
+  [1m[36mSubject Load (0.5ms)[0m  [1m[34mSELECT "subjects".* FROM "subjects"[0m
+  ↳ app/views/subjects/index.html.erb:10
+  Rendered subjects/index.html.erb within layouts/application (10.0ms)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"subjects"}, missing required keys: [:id]):
+    13:       <td><%= subject.content %></td>
+    14:       <td><%= subject.teacher %></td>
+    15:       <td>
+    16:         <%= link_to "詳細", subject_path %>
+    17:       </td>
+    18:       </tr>
+    19:     <% end %>
+  
+app/views/subjects/index.html.erb:16:in `block in _app_views_subjects_index_html_erb__789870860_131402040'
+app/views/subjects/index.html.erb:10:in `_app_views_subjects_index_html_erb__789870860_131402040'
+Started GET "/subjects" for ::1 at 2019-10-03 17:50:40 +0900
+Processing by SubjectsController#index as HTML
+  Rendering subjects/index.html.erb within layouts/application
+  [1m[36mSubject Load (0.2ms)[0m  [1m[34mSELECT "subjects".* FROM "subjects"[0m
+  ↳ app/views/subjects/index.html.erb:10
+  Rendered subjects/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 437ms (Views: 431.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/subjects/4" for ::1 at 2019-10-03 17:50:42 +0900
+Processing by SubjectsController#show as HTML
+  Parameters: {"id"=>"4"}
+  Rendering subjects/show.html.erb within layouts/application
+  Rendered subjects/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 126ms (Views: 122.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/subjects" for ::1 at 2019-10-03 18:07:14 +0900
+Processing by SubjectsController#index as HTML
+  Rendering subjects/index.html.erb within layouts/application
+  Rendered subjects/index.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (E:/school/app/views/subjects/index.html.erb:18: syntax error, unexpected '<'
+      </td>
+      ^
+E:/school/app/views/subjects/index.html.erb:19: unknown regexp options - tr
+E:/school/app/views/subjects/index.html.erb:20: syntax error, unexpected '<'
+    <% end );@output_buffer.safe_a...
+    ^
+E:/school/app/views/subjects/index.html.erb:26: syntax error, unexpected end-of-input, expecting end):
+  
+app/views/subjects/index.html.erb:18: syntax error, unexpected '<'
+app/views/subjects/index.html.erb:19: unknown regexp options - tr
+app/views/subjects/index.html.erb:20: syntax error, unexpected '<'
+app/views/subjects/index.html.erb:26: syntax error, unexpected end-of-input, expecting end
+Started GET "/subjects" for ::1 at 2019-10-03 18:07:25 +0900
+Processing by SubjectsController#index as HTML
+  Rendering subjects/index.html.erb within layouts/application
+  [1m[36mSubject Load (0.5ms)[0m  [1m[34mSELECT "subjects".* FROM "subjects"[0m
+  ↳ app/views/subjects/index.html.erb:10
+  Rendered subjects/index.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 259ms (Views: 255.0ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/subjects/new" for ::1 at 2019-10-03 18:07:28 +0900
+Processing by SubjectsController#new as HTML
+  Rendering subjects/new.html.erb within layouts/application
+  Rendered subjects/new.html.erb within layouts/application (114.3ms)
+Completed 500 Internal Server Error in 126ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `title' for #<Subject:0x000000000db9c7f8>):
+    1: <h1>新規作成</h1>
+    2: <%= form_for(@subject) do |f| %>
+    3:     <div><%= f.label :title %></div>
+    4:     <div><%= f.text_field :title %></div>
+    5:     <div><%= f.submit %></div>
+    6:   <% end %>
+    7: <%= link_to '戻る', subjects_path %>
+  
+app/views/subjects/new.html.erb:4:in `block in _app_views_subjects_new_html_erb__502592074_107469280'
+app/views/subjects/new.html.erb:2:in `_app_views_subjects_new_html_erb__502592074_107469280'
+Started GET "/subjects/new" for ::1 at 2019-10-03 18:08:51 +0900
+Processing by SubjectsController#new as HTML
+  Rendering subjects/new.html.erb within layouts/application
+  Rendered subjects/new.html.erb within layouts/application (6.4ms)
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 0.7ms)
+
+
+  
+ActionView::Template::Error (undefined method `title' for #<Subject:0x000000000c0fc768>):
+    1: <h1>新規作成</h1>
+    2: <%= form_for(@subject) do |f| %>
+    3:     <div><%= f.label :title %></div>
+    4:     <div><%= f.text_field :title %></div>
+    5:     <div><%= f.submit %></div>
+    6:   <% end %>
+    7: <%= link_to '戻る', subjects_path %>
+  
+app/views/subjects/new.html.erb:4:in `block in _app_views_subjects_new_html_erb__502592074_111169000'
+app/views/subjects/new.html.erb:2:in `_app_views_subjects_new_html_erb__502592074_111169000'
+Started GET "/subjects/new" for ::1 at 2019-10-03 18:09:09 +0900
+Processing by SubjectsController#new as HTML
+  Rendering subjects/new.html.erb within layouts/application
+  Rendered subjects/new.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 76ms (Views: 72.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 18:09:17 +0900
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 154ms (Views: 148.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/subjects" for ::1 at 2019-10-03 18:09:19 +0900
+Processing by SubjectsController#index as HTML
+  Rendering subjects/index.html.erb within layouts/application
+  [1m[36mSubject Load (0.2ms)[0m  [1m[34mSELECT "subjects".* FROM "subjects"[0m
+  ↳ app/views/subjects/index.html.erb:10
+  Rendered subjects/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 511ms (Views: 507.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/subjects/4" for ::1 at 2019-10-03 18:09:21 +0900
+Processing by SubjectsController#show as HTML
+  Parameters: {"id"=>"4"}
+  Rendering subjects/show.html.erb within layouts/application
+  Rendered subjects/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 129ms (Views: 124.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/subjects" for ::1 at 2019-10-03 18:15:01 +0900
+Processing by SubjectsController#index as HTML
+  Rendering subjects/index.html.erb within layouts/application
+  [1m[36mSubject Load (0.2ms)[0m  [1m[34mSELECT "subjects".* FROM "subjects"[0m
+  ↳ app/views/subjects/index.html.erb:10
+  Rendered subjects/index.html.erb within layouts/application (242.8ms)
+Completed 500 Internal Server Error in 260ms (ActiveRecord: 1.6ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `edit_subject' for #<#<Class:0x000000000eeddec0>:0x000000000eedc408>
+Did you mean?  edit_subject_url):
+    14:       <td><%= subject.teacher %></td>
+    15:       <td>
+    16:         <%= link_to "詳細", subject %>
+    17:         <%= link_to "編集", edit_subject %>
+    18:       </td>
+    19:       </tr>
+    20:     <% end %>
+  
+app/views/subjects/index.html.erb:17:in `block in _app_views_subjects_index_html_erb__789870860_125236100'
+app/views/subjects/index.html.erb:10:in `_app_views_subjects_index_html_erb__789870860_125236100'
+Started GET "/subjects" for ::1 at 2019-10-03 18:15:10 +0900
+Processing by SubjectsController#index as HTML
+  Rendering subjects/index.html.erb within layouts/application
+  [1m[36mSubject Load (0.7ms)[0m  [1m[34mSELECT "subjects".* FROM "subjects"[0m
+  ↳ app/views/subjects/index.html.erb:10
+  Rendered subjects/index.html.erb within layouts/application (14.1ms)
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.7ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"edit", :controller=>"subjects"}, missing required keys: [:id]):
+    14:       <td><%= subject.teacher %></td>
+    15:       <td>
+    16:         <%= link_to "詳細", subject %>
+    17:         <%= link_to "編集", edit_subject_path %>
+    18:       </td>
+    19:       </tr>
+    20:     <% end %>
+  
+app/views/subjects/index.html.erb:17:in `block in _app_views_subjects_index_html_erb__789870860_129239580'
+app/views/subjects/index.html.erb:10:in `_app_views_subjects_index_html_erb__789870860_129239580'
+Started GET "/subjects" for ::1 at 2019-10-03 18:15:12 +0900
+Processing by SubjectsController#index as HTML
+  Rendering subjects/index.html.erb within layouts/application
+  [1m[36mSubject Load (0.2ms)[0m  [1m[34mSELECT "subjects".* FROM "subjects"[0m
+  ↳ app/views/subjects/index.html.erb:10
+  Rendered subjects/index.html.erb within layouts/application (7.8ms)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"edit", :controller=>"subjects"}, missing required keys: [:id]):
+    14:       <td><%= subject.teacher %></td>
+    15:       <td>
+    16:         <%= link_to "詳細", subject %>
+    17:         <%= link_to "編集", edit_subject_path %>
+    18:       </td>
+    19:       </tr>
+    20:     <% end %>
+  
+app/views/subjects/index.html.erb:17:in `block in _app_views_subjects_index_html_erb__789870860_117217460'
+app/views/subjects/index.html.erb:10:in `_app_views_subjects_index_html_erb__789870860_117217460'
+Started GET "/subjects" for ::1 at 2019-10-03 18:16:31 +0900
+Processing by SubjectsController#index as HTML
+  Rendering subjects/index.html.erb within layouts/application
+  [1m[36mSubject Load (0.4ms)[0m  [1m[34mSELECT "subjects".* FROM "subjects"[0m
+  ↳ app/views/subjects/index.html.erb:10
+  Rendered subjects/index.html.erb within layouts/application (7.6ms)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"edit", :controller=>"subjects", :id=>nil}, missing required keys: [:id]):
+    14:       <td><%= subject.teacher %></td>
+    15:       <td>
+    16:         <%= link_to "詳細", subject %>
+    17:         <%= link_to "編集", edit_subject_path(@subject) %>
+    18:       </td>
+    19:       </tr>
+    20:     <% end %>
+  
+app/views/subjects/index.html.erb:17:in `block in _app_views_subjects_index_html_erb__789870860_135588140'
+app/views/subjects/index.html.erb:10:in `_app_views_subjects_index_html_erb__789870860_135588140'
+Started GET "/subjects" for ::1 at 2019-10-03 18:17:32 +0900
+Processing by SubjectsController#index as HTML
+  Rendering subjects/index.html.erb within layouts/application
+  [1m[36mSubject Load (0.3ms)[0m  [1m[34mSELECT "subjects".* FROM "subjects"[0m
+  ↳ app/views/subjects/index.html.erb:10
+  Rendered subjects/index.html.erb within layouts/application (195.4ms)
+Completed 500 Internal Server Error in 207ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `c' for #<#<Class:0x000000000eeddec0>:0x000000000f7a7e98>):
+    14:       <td><%= subject.teacher %></td>
+    15:       <td>
+    16:         <%= link_to "詳細", subject %>
+    17:         <%= link_to "編集", edit_subject_path(c) %>
+    18:       </td>
+    19:       </tr>
+    20:     <% end %>
+  
+app/views/subjects/index.html.erb:17:in `block in _app_views_subjects_index_html_erb__789870860_129819540'
+app/views/subjects/index.html.erb:10:in `_app_views_subjects_index_html_erb__789870860_129819540'
+Started GET "/subjects" for ::1 at 2019-10-03 18:19:58 +0900
+Processing by SubjectsController#index as HTML
+  Rendering subjects/index.html.erb within layouts/application
+  [1m[36mSubject Load (0.2ms)[0m  [1m[34mSELECT "subjects".* FROM "subjects"[0m
+  ↳ app/views/subjects/index.html.erb:10
+  Rendered subjects/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 497ms (Views: 493.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/subjects/4/edit" for ::1 at 2019-10-03 18:20:00 +0900
+Processing by SubjectsController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mSubject Load (0.2ms)[0m  [1m[34mSELECT  "subjects".* FROM "subjects" WHERE "subjects"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/subjects_controller.rb:14
+  Rendering subjects/edit.html.erb within layouts/application
+  Rendered subjects/edit.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 477ms (Views: 465.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/subjects/5/edit" for ::1 at 2019-10-03 18:20:06 +0900
+Processing by SubjectsController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mSubject Load (0.3ms)[0m  [1m[34mSELECT  "subjects".* FROM "subjects" WHERE "subjects"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/subjects_controller.rb:14
+  Rendering subjects/edit.html.erb within layouts/application
+  Rendered subjects/edit.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 149ms (Views: 141.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/subjects" for ::1 at 2019-10-03 18:34:08 +0900
+Processing by SubjectsController#index as HTML
+  Rendering subjects/index.html.erb within layouts/application
+  [1m[36mSubject Load (0.3ms)[0m  [1m[34mSELECT "subjects".* FROM "subjects"[0m
+  ↳ app/views/subjects/index.html.erb:10
+  Rendered subjects/index.html.erb within layouts/application (12.8ms)
+Completed 200 OK in 171ms (Views: 160.5ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/subjects/4/edit" for ::1 at 2019-10-03 18:34:11 +0900
+Processing by SubjectsController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mSubject Load (0.4ms)[0m  [1m[34mSELECT  "subjects".* FROM "subjects" WHERE "subjects"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/subjects_controller.rb:17
+  Rendering subjects/edit.html.erb within layouts/application
+  Rendered subjects/_form.html.erb (2.7ms)
+  Rendered subjects/edit.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 775ms (Views: 767.8ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/subjects/4" for ::1 at 2019-10-03 18:34:18 +0900
+Processing by SubjectsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"81pnHghr+KBcmar7R5z0fw3pH7YuFma5Khm6wTJJ/GlKYQuje3nNVMDUdabXm2znld+ZDVu0gIOWqaZnAFh4JQ==", "subject"=>{"department"=>"IT学", "content"=>"とても明るくて楽しいクラスです。", "teacher"=>"井川先生"}, "commit"=>"登録", "id"=>"4"}
+  [1m[36mSubject Load (0.2ms)[0m  [1m[34mSELECT  "subjects".* FROM "subjects" WHERE "subjects"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/subjects_controller.rb:25
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/subjects_controller.rb:26
+  [1m[36mSubject Update (219.7ms)[0m  [1m[33mUPDATE "subjects" SET "department" = ?, "updated_at" = ? WHERE "subjects"."id" = ?[0m  [["department", "IT学"], ["updated_at", "2019-10-03 09:34:18.672558"], ["id", 4]]
+  ↳ app/controllers/subjects_controller.rb:26
+  [1m[35m (98.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/subjects_controller.rb:26
+Redirected to http://localhost:3000/subjects
+Completed 302 Found in 337ms (ActiveRecord: 318.8ms)
+
+
+Started GET "/subjects" for ::1 at 2019-10-03 18:34:19 +0900
+Processing by SubjectsController#index as HTML
+  Rendering subjects/index.html.erb within layouts/application
+  [1m[36mSubject Load (0.2ms)[0m  [1m[34mSELECT "subjects".* FROM "subjects"[0m
+  ↳ app/views/subjects/index.html.erb:10
+  Rendered subjects/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 93ms (Views: 88.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/subjects/4/edit" for ::1 at 2019-10-03 18:34:21 +0900
+Processing by SubjectsController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mSubject Load (0.7ms)[0m  [1m[34mSELECT  "subjects".* FROM "subjects" WHERE "subjects"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/subjects_controller.rb:17
+  Rendering subjects/edit.html.erb within layouts/application
+  Rendered subjects/_form.html.erb (1.4ms)
+  Rendered subjects/edit.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 83ms (Views: 73.6ms | ActiveRecord: 0.7ms)
+
+
+Started PATCH "/subjects/4" for ::1 at 2019-10-03 18:34:29 +0900
+Processing by SubjectsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xxZwT+2q6W1JIH8Ah7yoIr4EoMicWXfSJaeYHPY297N+LRzynrjcmdVtoF0XuzC6JjImc+n7keiZF4S6xCdz/w==", "subject"=>{"department"=>"IT学科", "content"=>"とても明るくて楽しいクラスです。", "teacher"=>"井川先生"}, "commit"=>"登録", "id"=>"4"}
+  [1m[36mSubject Load (0.2ms)[0m  [1m[34mSELECT  "subjects".* FROM "subjects" WHERE "subjects"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/subjects_controller.rb:25
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/subjects_controller.rb:26
+  [1m[36mSubject Update (4.0ms)[0m  [1m[33mUPDATE "subjects" SET "department" = ?, "updated_at" = ? WHERE "subjects"."id" = ?[0m  [["department", "IT学科"], ["updated_at", "2019-10-03 09:34:29.674566"], ["id", 4]]
+  ↳ app/controllers/subjects_controller.rb:26
+  [1m[35m (42.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/subjects_controller.rb:26
+Redirected to http://localhost:3000/subjects
+Completed 302 Found in 61ms (ActiveRecord: 46.7ms)
+
+
+Started GET "/subjects" for ::1 at 2019-10-03 18:34:29 +0900
+Processing by SubjectsController#index as HTML
+  Rendering subjects/index.html.erb within layouts/application
+  [1m[36mSubject Load (0.2ms)[0m  [1m[34mSELECT "subjects".* FROM "subjects"[0m
+  ↳ app/views/subjects/index.html.erb:10
+  Rendered subjects/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 81ms (Views: 77.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/subjects/new" for ::1 at 2019-10-03 18:34:36 +0900
+Processing by SubjectsController#new as HTML
+  Rendering subjects/new.html.erb within layouts/application
+  Rendered subjects/_form.html.erb (0.9ms)
+  Rendered subjects/new.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 312ms (Views: 307.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/subjects" for ::1 at 2019-10-03 18:34:43 +0900
+Processing by SubjectsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7bO8QDQsTs2jpGtmt236OOJkBPPDaQsf6nW0BE57io9sMt/c7O/aAari+zCyyLs1vumbNOIN/JS+aljBoIr/ng==", "subject"=>{"department"=>"明るくて", "content"=>"あ", "teacher"=>"A"}, "commit"=>"登録"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/subjects_controller.rb:8
+  [1m[36mSubject Create (295.8ms)[0m  [1m[32mINSERT INTO "subjects" ("department", "content", "teacher", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["department", "明るくて"], ["content", "あ"], ["teacher", "A"], ["created_at", "2019-10-03 09:34:43.062656"], ["updated_at", "2019-10-03 09:34:43.062656"]]
+  ↳ app/controllers/subjects_controller.rb:8
+  [1m[35m (45.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/subjects_controller.rb:8
+Completed 500 Internal Server Error in 356ms (ActiveRecord: 341.7ms)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"subjects"}, missing required keys: [:id]):
+  
+app/controllers/subjects_controller.rb:9:in `create'
+Started POST "/subjects" for ::1 at 2019-10-03 18:36:33 +0900
+Processing by SubjectsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7bO8QDQsTs2jpGtmt236OOJkBPPDaQsf6nW0BE57io9sMt/c7O/aAari+zCyyLs1vumbNOIN/JS+aljBoIr/ng==", "subject"=>{"department"=>"明るくて", "content"=>"あ", "teacher"=>"A"}, "commit"=>"登録"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/subjects_controller.rb:8
+  [1m[36mSubject Create (4.3ms)[0m  [1m[32mINSERT INTO "subjects" ("department", "content", "teacher", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["department", "明るくて"], ["content", "あ"], ["teacher", "A"], ["created_at", "2019-10-03 09:36:34.330004"], ["updated_at", "2019-10-03 09:36:34.330004"]]
+  ↳ app/controllers/subjects_controller.rb:8
+  [1m[35m (42.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/subjects_controller.rb:8
+Redirected to http://localhost:3000/subjects
+Completed 302 Found in 84ms (ActiveRecord: 47.9ms)
+
+
+Started GET "/subjects" for ::1 at 2019-10-03 18:36:34 +0900
+Processing by SubjectsController#index as HTML
+  Rendering subjects/index.html.erb within layouts/application
+  [1m[36mSubject Load (0.2ms)[0m  [1m[34mSELECT "subjects".* FROM "subjects"[0m
+  ↳ app/views/subjects/index.html.erb:10
+  Rendered subjects/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 81ms (Views: 77.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/subjects/new" for ::1 at 2019-10-03 18:36:40 +0900
+Processing by SubjectsController#new as HTML
+  Rendering subjects/new.html.erb within layouts/application
+  Rendered subjects/_form.html.erb (1.0ms)
+  Rendered subjects/new.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 278ms (Views: 273.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/subjects" for ::1 at 2019-10-03 18:36:44 +0900
+Processing by SubjectsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0s8pM/JQd121m9el00zROKAQ6yjyHByLO/e1pMoBOWRTTkqvKpPjkbzdR/PW6ZA1/J1079N46wBv6FlhJPBMdQ==", "subject"=>{"department"=>"ｆ", "content"=>"free", "teacher"=>"drive"}, "commit"=>"登録"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/subjects_controller.rb:8
+  [1m[36mSubject Create (9.2ms)[0m  [1m[32mINSERT INTO "subjects" ("department", "content", "teacher", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["department", "ｆ"], ["content", "free"], ["teacher", "drive"], ["created_at", "2019-10-03 09:36:44.913139"], ["updated_at", "2019-10-03 09:36:44.913139"]]
+  ↳ app/controllers/subjects_controller.rb:8
+  [1m[35m (102.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/subjects_controller.rb:8
+Redirected to http://localhost:3000/subjects
+Completed 302 Found in 124ms (ActiveRecord: 111.8ms)
+
+
+Started GET "/subjects" for ::1 at 2019-10-03 18:36:45 +0900
+Processing by SubjectsController#index as HTML
+  Rendering subjects/index.html.erb within layouts/application
+  [1m[36mSubject Load (0.4ms)[0m  [1m[34mSELECT "subjects".* FROM "subjects"[0m
+  ↳ app/views/subjects/index.html.erb:10
+  Rendered subjects/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 76ms (Views: 72.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/subjects" for ::1 at 2019-10-03 18:40:37 +0900
+Processing by SubjectsController#index as HTML
+  Rendering subjects/index.html.erb within layouts/application
+  [1m[36mSubject Load (0.3ms)[0m  [1m[34mSELECT "subjects".* FROM "subjects"[0m
+  ↳ app/views/subjects/index.html.erb:10
+  Rendered subjects/index.html.erb within layouts/application (12.9ms)
+Completed 200 OK in 98ms (Views: 85.1ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/subjects/4" for ::1 at 2019-10-03 18:40:42 +0900
+Processing by SubjectsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mSubject Load (0.3ms)[0m  [1m[34mSELECT  "subjects".* FROM "subjects" WHERE "subjects"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/subjects_controller.rb:21
+  Rendering subjects/show.html.erb within layouts/application
+  Rendered subjects/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 511ms (Views: 503.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/subjects/4/edit" for ::1 at 2019-10-03 18:40:46 +0900
+Processing by SubjectsController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mSubject Load (0.3ms)[0m  [1m[34mSELECT  "subjects".* FROM "subjects" WHERE "subjects"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/subjects_controller.rb:39
+  Rendering subjects/edit.html.erb within layouts/application
+  Rendered subjects/_form.html.erb (1.1ms)
+  Rendered subjects/edit.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 91ms (Views: 83.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/subjects" for ::1 at 2019-10-03 18:40:49 +0900
+Processing by SubjectsController#index as HTML
+  Rendering subjects/index.html.erb within layouts/application
+  [1m[36mSubject Load (0.2ms)[0m  [1m[34mSELECT "subjects".* FROM "subjects"[0m
+  ↳ app/views/subjects/index.html.erb:10
+  Rendered subjects/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 835ms (Views: 830.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/subjects/new" for ::1 at 2019-10-03 18:40:50 +0900
+Processing by SubjectsController#new as HTML
+  Rendering subjects/new.html.erb within layouts/application
+  Rendered subjects/_form.html.erb (0.9ms)
+  Rendered subjects/new.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 923ms (Views: 919.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/subjects" for ::1 at 2019-10-03 18:40:52 +0900
+Processing by SubjectsController#index as HTML
+  Rendering subjects/index.html.erb within layouts/application
+  [1m[36mSubject Load (0.2ms)[0m  [1m[34mSELECT "subjects".* FROM "subjects"[0m
+  ↳ app/views/subjects/index.html.erb:10
+  Rendered subjects/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 787ms (Views: 784.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 23:07:15 +0900
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 603ms (Views: 598.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/subjects" for ::1 at 2019-10-03 23:07:19 +0900
+Processing by SubjectsController#index as HTML
+  Rendering subjects/index.html.erb within layouts/application
+  [1m[36mSubject Load (0.3ms)[0m  [1m[34mSELECT "subjects".* FROM "subjects"[0m
+  ↳ app/views/subjects/index.html.erb:10
+  Rendered subjects/index.html.erb within layouts/application (30.2ms)
+Completed 200 OK in 117ms (Views: 107.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/subjects" for ::1 at 2019-10-03 23:08:45 +0900
+Processing by SubjectsController#index as HTML
+  Rendering subjects/index.html.erb within layouts/application
+  [1m[36mSubject Load (0.2ms)[0m  [1m[34mSELECT "subjects".* FROM "subjects"[0m
+  ↳ app/views/subjects/index.html.erb:10
+  Rendered subjects/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 565ms (Views: 562.9ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/subjects/8" for ::1 at 2019-10-03 23:08:49 +0900
+Processing by SubjectsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"j8zpHuq60Satpgw1bljmCXkhD9SBW4WuMH/vbIUtNZBIy975wluf0eC09FOacOJVaA9+bzNWP0Ah4Wp4/MP3kg==", "id"=>"8"}
+  [1m[36mSubject Load (0.2ms)[0m  [1m[34mSELECT  "subjects".* FROM "subjects" WHERE "subjects"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/subjects_controller.rb:31
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/subjects_controller.rb:31
+  [1m[36mSubject Destroy (3.7ms)[0m  [1m[31mDELETE FROM "subjects" WHERE "subjects"."id" = ?[0m  [["id", 8]]
+  ↳ app/controllers/subjects_controller.rb:31
+  [1m[35m (96.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/subjects_controller.rb:31
+Redirected to http://localhost:3000/subjects
+Completed 302 Found in 128ms (ActiveRecord: 100.7ms)
+
+
+Started GET "/subjects" for ::1 at 2019-10-03 23:08:49 +0900
+Processing by SubjectsController#index as HTML
+  Rendering subjects/index.html.erb within layouts/application
+  [1m[36mSubject Load (0.4ms)[0m  [1m[34mSELECT "subjects".* FROM "subjects"[0m
+  ↳ app/views/subjects/index.html.erb:10
+  Rendered subjects/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 76ms (Views: 72.1ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/subjects/7" for ::1 at 2019-10-03 23:08:51 +0900
+Processing by SubjectsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"09GU9gQW64mCXrkD/2oUndRjU9vbR/m+/GIu+qRsxJMU1qMRLPelfs9MQWULQhDBxU0iYGlKQ1Dt/Kvu3YIGkQ==", "id"=>"7"}
+  [1m[36mSubject Load (0.3ms)[0m  [1m[34mSELECT  "subjects".* FROM "subjects" WHERE "subjects"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/subjects_controller.rb:31
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/subjects_controller.rb:31
+  [1m[36mSubject Destroy (236.7ms)[0m  [1m[31mDELETE FROM "subjects" WHERE "subjects"."id" = ?[0m  [["id", 7]]
+  ↳ app/controllers/subjects_controller.rb:31
+  [1m[35m (146.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/subjects_controller.rb:31
+Redirected to http://localhost:3000/subjects
+Completed 302 Found in 403ms (ActiveRecord: 383.5ms)
+
+
+Started GET "/subjects" for ::1 at 2019-10-03 23:08:51 +0900
+Processing by SubjectsController#index as HTML
+  Rendering subjects/index.html.erb within layouts/application
+  [1m[36mSubject Load (0.2ms)[0m  [1m[34mSELECT "subjects".* FROM "subjects"[0m
+  ↳ app/views/subjects/index.html.erb:10
+  Rendered subjects/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 67ms (Views: 64.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/subjects" for ::1 at 2019-10-03 23:10:20 +0900
+Processing by SubjectsController#index as HTML
+  Rendering subjects/index.html.erb within layouts/application
+  [1m[36mSubject Load (0.2ms)[0m  [1m[34mSELECT "subjects".* FROM "subjects"[0m
+  ↳ app/views/subjects/index.html.erb:10
+  Rendered subjects/index.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 81ms (Views: 73.5ms | ActiveRecord: 1.0ms)
+
+
+Started DELETE "/subjects/9" for ::1 at 2019-10-03 23:10:23 +0900
+Processing by SubjectsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"y/AFri7dtScb6zdt1fgeZpSUGWgkelKGLTnlSvvMtCQM9zJJBjz70Fb5zwsh0Bo6hbpo05Z36Gg8p2BegiJ2Jg==", "id"=>"9"}
+  [1m[36mSubject Load (0.5ms)[0m  [1m[34mSELECT  "subjects".* FROM "subjects" WHERE "subjects"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/subjects_controller.rb:31
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/subjects_controller.rb:31
+  [1m[36mSubject Destroy (2.6ms)[0m  [1m[31mDELETE FROM "subjects" WHERE "subjects"."id" = ?[0m  [["id", 9]]
+  ↳ app/controllers/subjects_controller.rb:31
+  [1m[35m (97.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/subjects_controller.rb:31
+Redirected to http://localhost:3000/subjects
+Completed 302 Found in 115ms (ActiveRecord: 100.9ms)
+
+
+Started GET "/subjects" for ::1 at 2019-10-03 23:10:23 +0900
+Processing by SubjectsController#index as HTML
+  Rendering subjects/index.html.erb within layouts/application
+  [1m[36mSubject Load (0.1ms)[0m  [1m[34mSELECT "subjects".* FROM "subjects"[0m
+  ↳ app/views/subjects/index.html.erb:10
+  Rendered subjects/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 73ms (Views: 69.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/subjects/new" for ::1 at 2019-10-03 23:10:30 +0900
+Processing by SubjectsController#new as HTML
+  Rendering subjects/new.html.erb within layouts/application
+  Rendered subjects/_form.html.erb (64.0ms)
+  Rendered subjects/new.html.erb within layouts/application (67.4ms)
+Completed 200 OK in 142ms (Views: 138.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/subjects" for ::1 at 2019-10-03 23:10:36 +0900
+Processing by SubjectsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4LxG9bLGYE2ofGHw9BD4sZBPjruUVUYc1Yzq+FM97Q3l2rIGVM4YsL9GqOXBgRcgEFnyIMw8XVuwcx+WliTLcw==", "subject"=>{"department"=>"dｄ", "content"=>"ｄ", "teacher"=>"d"}, "commit"=>"登録"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/subjects_controller.rb:8
+  [1m[36mSubject Create (4.4ms)[0m  [1m[32mINSERT INTO "subjects" ("department", "content", "teacher", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["department", "dｄ"], ["content", "ｄ"], ["teacher", "d"], ["created_at", "2019-10-03 14:10:36.313244"], ["updated_at", "2019-10-03 14:10:36.313244"]]
+  ↳ app/controllers/subjects_controller.rb:8
+  [1m[35m (98.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/subjects_controller.rb:8
+Redirected to http://localhost:3000/subjects
+Completed 302 Found in 140ms (ActiveRecord: 103.3ms)
+
+
+Started GET "/subjects" for ::1 at 2019-10-03 23:10:36 +0900
+Processing by SubjectsController#index as HTML
+  Rendering subjects/index.html.erb within layouts/application
+  [1m[36mSubject Load (0.2ms)[0m  [1m[34mSELECT "subjects".* FROM "subjects"[0m
+  ↳ app/views/subjects/index.html.erb:10
+  Rendered subjects/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 79ms (Views: 76.1ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/subjects/10" for ::1 at 2019-10-03 23:10:39 +0900
+Processing by SubjectsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"oYOydgBusycH1XjAzPDtoqRaM7JfFkmQhH+y4ti/X51mhIWRKI/90ErHgKY42On+tXRCCe0b836V4Tf2oVGdnw==", "id"=>"10"}
+  [1m[36mSubject Load (0.2ms)[0m  [1m[34mSELECT  "subjects".* FROM "subjects" WHERE "subjects"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/subjects_controller.rb:31
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/subjects_controller.rb:31
+  [1m[36mSubject Destroy (438.9ms)[0m  [1m[31mDELETE FROM "subjects" WHERE "subjects"."id" = ?[0m  [["id", 10]]
+  ↳ app/controllers/subjects_controller.rb:31
+  [1m[35m (145.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/subjects_controller.rb:31
+Redirected to http://localhost:3000/subjects
+Completed 302 Found in 598ms (ActiveRecord: 584.6ms)
+
+
+Started GET "/subjects" for ::1 at 2019-10-03 23:10:39 +0900
+Processing by SubjectsController#index as HTML
+  Rendering subjects/index.html.erb within layouts/application
+  [1m[36mSubject Load (0.2ms)[0m  [1m[34mSELECT "subjects".* FROM "subjects"[0m
+  ↳ app/views/subjects/index.html.erb:10
+  Rendered subjects/index.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 76ms (Views: 73.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/subjects/new" for ::1 at 2019-10-03 23:13:49 +0900
+Processing by SubjectsController#new as HTML
+  Rendering subjects/new.html.erb within layouts/application
+  Rendered subjects/_form.html.erb (1.1ms)
+  Rendered subjects/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 77ms (Views: 65.9ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/subjects" for ::1 at 2019-10-03 23:13:53 +0900
+Processing by SubjectsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AKl92HTJDkw/fWKjDmZ6/nYzi7qHH0t8RektXvlSVgIFz4krksF2sShHq7Y795Vv9iX3Id92UDsgFtgwPEtwfA==", "subject"=>{"department"=>"✕", "content"=>"ｘ", "teacher"=>"ｘ"}, "commit"=>"登録"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/subjects_controller.rb:8
+  [1m[36mSubject Create (69.9ms)[0m  [1m[32mINSERT INTO "subjects" ("department", "content", "teacher", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["department", "✕"], ["content", "ｘ"], ["teacher", "ｘ"], ["created_at", "2019-10-03 14:13:53.997238"], ["updated_at", "2019-10-03 14:13:53.997238"]]
+  ↳ app/controllers/subjects_controller.rb:8
+  [1m[35m (98.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/subjects_controller.rb:8
+Redirected to http://localhost:3000/subjects
+Completed 302 Found in 183ms (ActiveRecord: 168.5ms)
+
+
+Started GET "/subjects" for ::1 at 2019-10-03 23:13:54 +0900
+Processing by SubjectsController#index as HTML
+  Rendering subjects/index.html.erb within layouts/application
+  [1m[36mSubject Load (0.3ms)[0m  [1m[34mSELECT "subjects".* FROM "subjects"[0m
+  ↳ app/views/subjects/index.html.erb:13
+  Rendered subjects/index.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 73ms (Views: 70.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/subjects" for ::1 at 2019-10-03 23:15:51 +0900
+Processing by SubjectsController#index as HTML
+  Rendering subjects/index.html.erb within layouts/application
+  [1m[36mSubject Load (0.3ms)[0m  [1m[34mSELECT "subjects".* FROM "subjects"[0m
+  ↳ app/views/subjects/index.html.erb:13
+  Rendered subjects/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 83ms (Views: 76.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/subjects" for ::1 at 2019-10-03 23:16:38 +0900
+Processing by SubjectsController#index as HTML
+  Rendering subjects/index.html.erb within layouts/application
+  [1m[36mSubject Load (0.2ms)[0m  [1m[34mSELECT "subjects".* FROM "subjects"[0m
+  ↳ app/views/subjects/index.html.erb:13
+  Rendered subjects/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 99ms (Views: 96.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/subjects" for ::1 at 2019-10-03 23:17:35 +0900
+  
+SyntaxError (E:/school/app/controllers/subjects_controller.rb:46: syntax error, unexpected end-of-input, expecting end):
+  
+app/controllers/subjects_controller.rb:46: syntax error, unexpected end-of-input, expecting end
+Started GET "/subjects" for ::1 at 2019-10-03 23:17:44 +0900
+Processing by SubjectsController#index as HTML
+  Rendering subjects/index.html.erb within layouts/application
+  [1m[36mSubject Load (0.2ms)[0m  [1m[34mSELECT "subjects".* FROM "subjects"[0m
+  ↳ app/views/subjects/index.html.erb:13
+  Rendered subjects/index.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 493ms (Views: 486.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/subjects/new" for ::1 at 2019-10-03 23:17:51 +0900
+Processing by SubjectsController#new as HTML
+  Rendering subjects/new.html.erb within layouts/application
+  Rendered subjects/_form.html.erb (1.6ms)
+  Rendered subjects/new.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 356ms (Views: 354.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/subjects" for ::1 at 2019-10-03 23:17:56 +0900
+Processing by SubjectsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9ydAnDU4jCJU/bgvi76WrZ885Z5nb+1htt0mWYLjuhnyQbRv0zD030PHcTq+L3k8HyqZBT8G9ibTItM3R/qcZw==", "subject"=>{"department"=>"ｄ", "content"=>"ｄ", "teacher"=>"ｄ"}, "commit"=>"登録"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/subjects_controller.rb:8
+  [1m[36mSubject Create (325.6ms)[0m  [1m[32mINSERT INTO "subjects" ("department", "content", "teacher", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["department", "ｄ"], ["content", "ｄ"], ["teacher", "ｄ"], ["created_at", "2019-10-03 14:17:56.248213"], ["updated_at", "2019-10-03 14:17:56.248213"]]
+  ↳ app/controllers/subjects_controller.rb:8
+  [1m[35m (97.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/subjects_controller.rb:8
+Redirected to http://localhost:3000/subjects
+Completed 302 Found in 434ms (ActiveRecord: 423.1ms)
+
+
+Started GET "/subjects" for ::1 at 2019-10-03 23:17:56 +0900
+Processing by SubjectsController#index as HTML
+  Rendering subjects/index.html.erb within layouts/application
+  [1m[36mSubject Load (0.4ms)[0m  [1m[34mSELECT "subjects".* FROM "subjects"[0m
+  ↳ app/views/subjects/index.html.erb:13
+  Rendered subjects/index.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 90ms (Views: 87.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/subjects" for ::1 at 2019-10-03 23:20:52 +0900
+Processing by SubjectsController#index as HTML
+  Rendering subjects/index.html.erb within layouts/application
+  [1m[36mSubject Load (0.3ms)[0m  [1m[34mSELECT "subjects".* FROM "subjects"[0m
+  ↳ app/views/subjects/index.html.erb:13
+  Rendered subjects/index.html.erb within layouts/application (15.3ms)
+Completed 200 OK in 92ms (Views: 84.8ms | ActiveRecord: 1.1ms)
+
+
+Started DELETE "/subjects/12" for ::1 at 2019-10-03 23:20:54 +0900
+Processing by SubjectsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"a4s5uvSGlQ/Q+p13wG3srCaGDOzIZRH4e2fRhq8F86CsjA5d3Gfb+J3oZRE0RejwN6h9V3poqxZq+VSS1usxog==", "id"=>"12"}
+  [1m[36mSubject Load (0.3ms)[0m  [1m[34mSELECT  "subjects".* FROM "subjects" WHERE "subjects"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/subjects_controller.rb:48
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/subjects_controller.rb:38
+  [1m[36mSubject Destroy (43.9ms)[0m  [1m[31mDELETE FROM "subjects" WHERE "subjects"."id" = ?[0m  [["id", 12]]
+  ↳ app/controllers/subjects_controller.rb:38
+  [1m[35m (98.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/subjects_controller.rb:38
+Redirected to http://localhost:3000/subjects
+Completed 302 Found in 166ms (ActiveRecord: 142.4ms)
+
+
+Started GET "/subjects" for ::1 at 2019-10-03 23:20:54 +0900
+Processing by SubjectsController#index as HTML
+  Rendering subjects/index.html.erb within layouts/application
+  [1m[36mSubject Load (0.2ms)[0m  [1m[34mSELECT "subjects".* FROM "subjects"[0m
+  ↳ app/views/subjects/index.html.erb:13
+  Rendered subjects/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 69ms (Views: 66.7ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/subjects/11" for ::1 at 2019-10-03 23:20:57 +0900
+Processing by SubjectsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"9unjoDhWyGnp2vIv3Av8gwylEfqJ1SOIGXZ2wC5kdowx7tRHELeGnqTICkkoI/jfHYtgQTvYmWYI6PPUV4q0jg==", "id"=>"11"}
+  [1m[36mSubject Load (0.4ms)[0m  [1m[34mSELECT  "subjects".* FROM "subjects" WHERE "subjects"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/subjects_controller.rb:48
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/subjects_controller.rb:38
+  [1m[36mSubject Destroy (225.5ms)[0m  [1m[31mDELETE FROM "subjects" WHERE "subjects"."id" = ?[0m  [["id", 11]]
+  ↳ app/controllers/subjects_controller.rb:38
+  [1m[35m (148.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/subjects_controller.rb:38
+Redirected to http://localhost:3000/subjects
+Completed 302 Found in 390ms (ActiveRecord: 374.7ms)
+
+
+Started GET "/subjects" for ::1 at 2019-10-03 23:20:57 +0900
+Processing by SubjectsController#index as HTML
+  Rendering subjects/index.html.erb within layouts/application
+  [1m[36mSubject Load (0.2ms)[0m  [1m[34mSELECT "subjects".* FROM "subjects"[0m
+  ↳ app/views/subjects/index.html.erb:13
+  Rendered subjects/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 70ms (Views: 67.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/subjects/6" for ::1 at 2019-10-03 23:21:36 +0900
+Processing by SubjectsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mSubject Load (0.2ms)[0m  [1m[34mSELECT  "subjects".* FROM "subjects" WHERE "subjects"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/subjects_controller.rb:24
+  Rendering subjects/show.html.erb within layouts/application
+  Rendered subjects/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 80ms (Views: 69.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/subjects" for ::1 at 2019-10-03 23:21:38 +0900
+Processing by SubjectsController#index as HTML
+  Rendering subjects/index.html.erb within layouts/application
+  [1m[36mSubject Load (0.2ms)[0m  [1m[34mSELECT "subjects".* FROM "subjects"[0m
+  ↳ app/views/subjects/index.html.erb:13
+  Rendered subjects/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 821ms (Views: 818.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/subjects/6/edit" for ::1 at 2019-10-03 23:21:40 +0900
+Processing by SubjectsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mSubject Load (0.2ms)[0m  [1m[34mSELECT  "subjects".* FROM "subjects" WHERE "subjects"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/subjects_controller.rb:48
+  Rendering subjects/edit.html.erb within layouts/application
+  Rendered subjects/_form.html.erb (1.3ms)
+  Rendered subjects/edit.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 596ms (Views: 75.9ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/subjects/6" for ::1 at 2019-10-03 23:21:42 +0900
+Processing by SubjectsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xQT+lTabTI7lTwW8ZxjUTk0I5Ug9sPnCssajGw8PrVpEJWqqe6HSPRdCF487TS8ltzYGbD8PtAuLB6AZQie8NQ==", "subject"=>{"department"=>"動物学科", "content"=>"動物との触れ合いが多く楽しいクラスです。", "teacher"=>"岸川先生"}, "commit"=>"登録", "id"=>"6"}
+  [1m[36mSubject Load (0.2ms)[0m  [1m[34mSELECT  "subjects".* FROM "subjects" WHERE "subjects"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/subjects_controller.rb:48
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/subjects_controller.rb:29
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/subjects_controller.rb:29
+Redirected to http://localhost:3000/subjects
+Completed 302 Found in 25ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/subjects" for ::1 at 2019-10-03 23:21:42 +0900
+Processing by SubjectsController#index as HTML
+  Rendering subjects/index.html.erb within layouts/application
+  [1m[36mSubject Load (0.2ms)[0m  [1m[34mSELECT "subjects".* FROM "subjects"[0m
+  ↳ app/views/subjects/index.html.erb:13
+  Rendered subjects/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 73ms (Views: 70.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 23:22:24 +0900
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 66ms (Views: 64.2ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+Migrating to CreateStudents (20191003142350)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:4
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/migrate/20191003142350_create_students.rb:3
+  [1m[35m (4.1ms)[0m  [1m[35mCREATE TABLE "students" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20191003142350_create_students.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20191003142350"]]
+  ↳ bin/rails:4
+  [1m[35m (42.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:4
+  [1m[35m (0.8ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:4
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mSubject Create (4.0ms)[0m  [1m[32mINSERT INTO "subjects" ("department", "content", "teacher", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["department", "IT学科"], ["content", "とても明るくて楽しいクラスです。"], ["teacher", "井川先生"], ["created_at", "2019-10-03 14:26:52.326936"], ["updated_at", "2019-10-03 14:26:52.326936"]]
+  ↳ db/seeds.rb:9
+  [1m[35m (99.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mSubject Create (4.3ms)[0m  [1m[32mINSERT INTO "subjects" ("department", "content", "teacher", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["department", "現代ビジネス学科"], ["content", "クラスの仲が良く楽しいクラスです。"], ["teacher", "中田先生"], ["created_at", "2019-10-03 14:26:52.433568"], ["updated_at", "2019-10-03 14:26:52.433568"]]
+  ↳ db/seeds.rb:10
+  [1m[35m (41.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[36mSubject Create (4.3ms)[0m  [1m[32mINSERT INTO "subjects" ("department", "content", "teacher", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["department", "動物学科"], ["content", "動物との触れ合いが多く楽しいクラスです。"], ["teacher", "岸川先生"], ["created_at", "2019-10-03 14:26:52.481841"], ["updated_at", "2019-10-03 14:26:52.481841"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (41.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mSubject Create (2.4ms)[0m  [1m[32mINSERT INTO "subjects" ("department", "content", "teacher", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["department", "IT学科"], ["content", "とても明るくて楽しいクラスです。"], ["teacher", "井川先生"], ["created_at", "2019-10-03 14:29:47.529621"], ["updated_at", "2019-10-03 14:29:47.529621"]]
+  ↳ db/seeds.rb:9
+  [1m[35m (97.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mSubject Create (4.3ms)[0m  [1m[32mINSERT INTO "subjects" ("department", "content", "teacher", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["department", "現代ビジネス学科"], ["content", "クラスの仲が良く楽しいクラスです。"], ["teacher", "中田先生"], ["created_at", "2019-10-03 14:29:47.633031"], ["updated_at", "2019-10-03 14:29:47.633031"]]
+  ↳ db/seeds.rb:10
+  [1m[35m (41.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[36mSubject Create (4.3ms)[0m  [1m[32mINSERT INTO "subjects" ("department", "content", "teacher", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["department", "動物学科"], ["content", "動物との触れ合いが多く楽しいクラスです。"], ["teacher", "岸川先生"], ["created_at", "2019-10-03 14:29:47.681004"], ["updated_at", "2019-10-03 14:29:47.681004"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (41.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mSubject Create (15.5ms)[0m  [1m[32mINSERT INTO "subjects" ("department", "content", "teacher", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["department", "IT学科"], ["content", "とても明るくて楽しいクラスです。"], ["teacher", "井川先生"], ["created_at", "2019-10-03 14:30:05.178993"], ["updated_at", "2019-10-03 14:30:05.178993"]]
+  ↳ db/seeds.rb:9
+  [1m[35m (103.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mSubject Create (4.8ms)[0m  [1m[32mINSERT INTO "subjects" ("department", "content", "teacher", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["department", "現代ビジネス学科"], ["content", "クラスの仲が良く楽しいクラスです。"], ["teacher", "中田先生"], ["created_at", "2019-10-03 14:30:05.300181"], ["updated_at", "2019-10-03 14:30:05.300181"]]
+  ↳ db/seeds.rb:10
+  [1m[35m (42.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[36mSubject Create (4.3ms)[0m  [1m[32mINSERT INTO "subjects" ("department", "content", "teacher", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["department", "動物学科"], ["content", "動物との触れ合いが多く楽しいクラスです。"], ["teacher", "岸川先生"], ["created_at", "2019-10-03 14:30:05.349152"], ["updated_at", "2019-10-03 14:30:05.349152"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (42.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ bin/rails:4
+  [1m[35m (108.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:4
+  [1m[35m (55.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+Migrating to CreateSubjects (20191003075848)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:4
+  [1m[35m (4.3ms)[0m  [1m[35mCREATE TABLE "subjects" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "department" varchar(20) NOT NULL, "content" text(300) NOT NULL, "teacher" varchar(30), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20191003075848_create_subjects.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20191003075848"]]
+  ↳ bin/rails:4
+  [1m[35m (48.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:4
+Migrating to CreateStudents (20191003142350)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:4
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ bin/rails:4
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ bin/rails:4
+  [1m[35m (108.2ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:4
+  [1m[35m (55.6ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+Migrating to CreateSubjects (20191003075848)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:4
+  [1m[35m (4.8ms)[0m  [1m[35mCREATE TABLE "subjects" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "department" varchar(20) NOT NULL, "content" text(300) NOT NULL, "teacher" varchar(30), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20191003075848_create_subjects.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20191003075848"]]
+  ↳ bin/rails:4
+  [1m[35m (48.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:4
+Migrating to CreateStudents (20191003142350)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:4
+  [1m[35m (4.5ms)[0m  [1m[35mCREATE TABLE "students" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(20) NOT NULL, "number" varchar(20) NOT NULL, "subject_id" integer NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20191003142350_create_students.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20191003142350"]]
+  ↳ bin/rails:4
+  [1m[35m (45.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:4
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::InternalMetadata Create (4.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-10-03 14:32:47.930063"], ["updated_at", "2019-10-03 14:32:47.930063"]]
+  ↳ bin/rails:4
+  [1m[35m (44.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mSubject Create (4.1ms)[0m  [1m[32mINSERT INTO "subjects" ("department", "content", "teacher", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["department", "IT学科"], ["content", "とても明るくて楽しいクラスです。"], ["teacher", "井川先生"], ["created_at", "2019-10-03 14:33:04.689677"], ["updated_at", "2019-10-03 14:33:04.689677"]]
+  ↳ db/seeds.rb:9
+  [1m[35m (97.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mSubject Create (4.4ms)[0m  [1m[32mINSERT INTO "subjects" ("department", "content", "teacher", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["department", "現代ビジネス学科"], ["content", "クラスの仲が良く楽しいクラスです。"], ["teacher", "中田先生"], ["created_at", "2019-10-03 14:33:04.793372"], ["updated_at", "2019-10-03 14:33:04.793372"]]
+  ↳ db/seeds.rb:10
+  [1m[35m (41.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[36mSubject Create (4.2ms)[0m  [1m[32mINSERT INTO "subjects" ("department", "content", "teacher", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["department", "動物学科"], ["content", "動物との触れ合いが多く楽しいクラスです。"], ["teacher", "岸川先生"], ["created_at", "2019-10-03 14:33:04.842600"], ["updated_at", "2019-10-03 14:33:04.842600"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (41.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mStudent Create (4.4ms)[0m  [1m[32mINSERT INTO "students" ("name", "number", "subject_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中　太郎"], ["number", "JR0001"], ["subject_id", 0], ["created_at", "2019-10-03 14:33:04.908946"], ["updated_at", "2019-10-03 14:33:04.908946"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (40.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:14
+  [1m[36mStudent Create (4.1ms)[0m  [1m[32mINSERT INTO "students" ("name", "number", "subject_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "鈴木　次郎"], ["number", "JR0002"], ["subject_id", 0], ["created_at", "2019-10-03 14:33:04.955452"], ["updated_at", "2019-10-03 14:33:04.955452"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (42.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:15
+  [1m[36mStudent Create (4.2ms)[0m  [1m[32mINSERT INTO "students" ("name", "number", "subject_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "佐藤　のり子"], ["number", "JR0003"], ["subject_id", 0], ["created_at", "2019-10-03 14:33:05.003824"], ["updated_at", "2019-10-03 14:33:05.003824"]]
+  ↳ db/seeds.rb:15
+  [1m[35m (41.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:15
+Started GET "/" for ::1 at 2019-10-03 23:33:33 +0900
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 701ms (Views: 695.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 23:34:28 +0900
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (203.8ms)
+Completed 500 Internal Server Error in 214ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `students_path' for #<#<Class:0x0000000008530e50>:0x000000000c50eea0>):
+    1: <h1>school アプリ</h1>
+    2: <%= link_to "生徒一覧へ", students_path %>
+    3: <%= link_to "学科一覧へ", subjects_path %>
+  
+app/views/top/index.html.erb:2:in `_app_views_top_index_html_erb__582323180_103342360'
+Started GET "/" for ::1 at 2019-10-03 23:35:29 +0900
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (198.2ms)
+Completed 500 Internal Server Error in 205ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `students_path' for #<#<Class:0x000000000cae7f48>:0x000000000cae4208>):
+    1: <h1>school アプリ</h1>
+    2: <%= link_to "生徒一覧へ", students_path %>
+    3: <%= link_to "学科一覧へ", subjects_path %>
+  
+app/views/top/index.html.erb:2:in `_app_views_top_index_html_erb__582323180_106342720'
+Started GET "/" for ::1 at 2019-10-03 23:36:05 +0900
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (247.8ms)
+Completed 500 Internal Server Error in 254ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `students_path' for #<#<Class:0x000000000cae7f48>:0x000000000ecaa770>):
+    1: <h1>school アプリ</h1>
+    2: <%= link_to "生徒一覧へ", students_path %>
+    3: <%= link_to "学科一覧へ", subjects_path %>
+  
+app/views/top/index.html.erb:2:in `_app_views_top_index_html_erb__582323180_124082120'
+Started GET "/" for ::1 at 2019-10-03 23:36:07 +0900
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (175.6ms)
+Completed 500 Internal Server Error in 183ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `students_path' for #<#<Class:0x000000000cae7f48>:0x000000000f389f78>):
+    1: <h1>school アプリ</h1>
+    2: <%= link_to "生徒一覧へ", students_path %>
+    3: <%= link_to "学科一覧へ", subjects_path %>
+  
+app/views/top/index.html.erb:2:in `_app_views_top_index_html_erb__582323180_127685580'
+Started GET "/" for ::1 at 2019-10-03 23:37:53 +0900
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 460ms (Views: 457.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/students" for ::1 at 2019-10-03 23:37:55 +0900
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  Rendered students/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 77ms (Views: 74.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/students" for ::1 at 2019-10-03 23:38:41 +0900
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  Rendered students/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 216ms (Views: 212.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/students" for ::1 at 2019-10-03 23:42:30 +0900
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  ↳ app/views/students/index.html.erb:13
+  Rendered students/index.html.erb within layouts/application (12.7ms)
+Completed 200 OK in 96ms (Views: 89.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/students/1" for ::1 at 2019-10-03 23:43:27 +0900
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 406 Not Acceptable in 271ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::UnknownFormat (StudentsController#show is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.2.3) lib/action_controller/metal/implicit_render.rb:55:in `default_render'
+actionpack (5.2.3) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (5.2.3) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (5.2.3) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (5.2.3) lib/abstract_controller/base.rb:194:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.2.3) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (5.2.3) lib/active_support/callbacks.rb:132:in `run_callbacks'
+actionpack (5.2.3) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (5.2.3) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.3) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.3) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.3) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+activerecord (5.2.3) lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+actionpack (5.2.3) lib/abstract_controller/base.rb:134:in `process'
+actionview (5.2.3) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.3) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.3) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (5.2.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.3) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/students" for ::1 at 2019-10-03 23:43:29 +0900
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  ↳ app/views/students/index.html.erb:13
+  Rendered students/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 79ms (Views: 76.4ms | ActiveRecord: 0.2ms)
+
+
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mStudent Destroy (111.2ms)[0m  [1m[31mDELETE FROM "students"[0m
+  [1m[36mSubject Destroy (155.4ms)[0m  [1m[31mDELETE FROM "subjects"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:4
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:4
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:4
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mSubject Create (4.1ms)[0m  [1m[32mINSERT INTO "subjects" ("department", "content", "teacher", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["department", "IT学科"], ["content", "とても明るくて楽しいクラスです。"], ["teacher", "井川先生"], ["created_at", "2019-10-03 14:48:41.841739"], ["updated_at", "2019-10-03 14:48:41.841739"]]
+  ↳ db/seeds.rb:9
+  [1m[35m (99.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mSubject Create (4.3ms)[0m  [1m[32mINSERT INTO "subjects" ("department", "content", "teacher", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["department", "現代ビジネス学科"], ["content", "クラスの仲が良く楽しいクラスです。"], ["teacher", "中田先生"], ["created_at", "2019-10-03 14:48:41.947887"], ["updated_at", "2019-10-03 14:48:41.947887"]]
+  ↳ db/seeds.rb:10
+  [1m[35m (41.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[36mSubject Create (4.3ms)[0m  [1m[32mINSERT INTO "subjects" ("department", "content", "teacher", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["department", "動物学科"], ["content", "動物との触れ合いが多く楽しいクラスです。"], ["teacher", "岸川先生"], ["created_at", "2019-10-03 14:48:41.996030"], ["updated_at", "2019-10-03 14:48:41.996030"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (41.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mStudent Create (4.3ms)[0m  [1m[32mINSERT INTO "students" ("name", "number", "subject_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中　太郎"], ["number", "JR0001"], ["subject_id", 0], ["created_at", "2019-10-03 14:48:42.062839"], ["updated_at", "2019-10-03 14:48:42.062839"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (41.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:14
+  [1m[36mStudent Create (7.0ms)[0m  [1m[32mINSERT INTO "students" ("name", "number", "subject_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "鈴木　次郎"], ["number", "JR0002"], ["subject_id", 0], ["created_at", "2019-10-03 14:48:42.110451"], ["updated_at", "2019-10-03 14:48:42.110451"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (44.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:15
+  [1m[36mStudent Create (2.2ms)[0m  [1m[32mINSERT INTO "students" ("name", "number", "subject_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "佐藤　のり子"], ["number", "JR0003"], ["subject_id", 0], ["created_at", "2019-10-03 14:48:42.163568"], ["updated_at", "2019-10-03 14:48:42.163568"]]
+  ↳ db/seeds.rb:15
+  [1m[35m (40.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:15
+Started GET "/students" for ::1 at 2019-10-03 23:48:56 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  ↳ app/views/students/index.html.erb:13
+  Rendered students/index.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 79ms (Views: 71.3ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/students" for ::1 at 2019-10-03 23:48:58 +0900
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  ↳ app/views/students/index.html.erb:13
+  Rendered students/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 65ms (Views: 62.9ms | ActiveRecord: 0.2ms)
+
+
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT  "students".* FROM "students" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ bin/rails:4
+  [1m[35m (109.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:4
+  [1m[35m (56.0ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ bin/rails:4
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+Migrating to CreateSubjects (20191003075848)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:4
+  [1m[35m (4.3ms)[0m  [1m[35mCREATE TABLE "subjects" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "department" varchar(20) NOT NULL, "content" text(300) NOT NULL, "teacher" varchar(30), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20191003075848_create_subjects.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20191003075848"]]
+  ↳ bin/rails:4
+  [1m[35m (47.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:4
+Migrating to CreateStudents (20191003142350)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:4
+  [1m[35m (4.5ms)[0m  [1m[35mCREATE TABLE "students" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(20) NOT NULL, "number" varchar(20) NOT NULL, "subject_id" varchar NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20191003142350_create_students.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20191003142350"]]
+  ↳ bin/rails:4
+  [1m[35m (45.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:4
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::InternalMetadata Create (4.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-10-03 14:51:24.132003"], ["updated_at", "2019-10-03 14:51:24.132003"]]
+  ↳ bin/rails:4
+  [1m[35m (44.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mSubject Create (4.1ms)[0m  [1m[32mINSERT INTO "subjects" ("department", "content", "teacher", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["department", "IT学科"], ["content", "とても明るくて楽しいクラスです。"], ["teacher", "井川先生"], ["created_at", "2019-10-03 14:51:36.406748"], ["updated_at", "2019-10-03 14:51:36.406748"]]
+  ↳ db/seeds.rb:9
+  [1m[35m (97.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.7ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mSubject Create (4.2ms)[0m  [1m[32mINSERT INTO "subjects" ("department", "content", "teacher", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["department", "現代ビジネス学科"], ["content", "クラスの仲が良く楽しいクラスです。"], ["teacher", "中田先生"], ["created_at", "2019-10-03 14:51:36.511625"], ["updated_at", "2019-10-03 14:51:36.511625"]]
+  ↳ db/seeds.rb:10
+  [1m[35m (41.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[36mSubject Create (4.4ms)[0m  [1m[32mINSERT INTO "subjects" ("department", "content", "teacher", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["department", "動物学科"], ["content", "動物との触れ合いが多く楽しいクラスです。"], ["teacher", "岸川先生"], ["created_at", "2019-10-03 14:51:36.559176"], ["updated_at", "2019-10-03 14:51:36.559176"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (41.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mStudent Create (4.2ms)[0m  [1m[32mINSERT INTO "students" ("name", "number", "subject_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中　太郎"], ["number", "JR0001"], ["subject_id", "IT学科"], ["created_at", "2019-10-03 14:51:36.623460"], ["updated_at", "2019-10-03 14:51:36.623460"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (41.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:14
+  [1m[36mStudent Create (4.2ms)[0m  [1m[32mINSERT INTO "students" ("name", "number", "subject_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "鈴木　次郎"], ["number", "JR0002"], ["subject_id", "IT学科"], ["created_at", "2019-10-03 14:51:36.670762"], ["updated_at", "2019-10-03 14:51:36.670762"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (41.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:15
+  [1m[36mStudent Create (4.3ms)[0m  [1m[32mINSERT INTO "students" ("name", "number", "subject_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "佐藤　のり子"], ["number", "JR0003"], ["subject_id", "動物学科"], ["created_at", "2019-10-03 14:51:36.718196"], ["updated_at", "2019-10-03 14:51:36.718196"]]
+  ↳ db/seeds.rb:15
+  [1m[35m (41.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:15
+  [1m[36mStudent Load (4.1ms)[0m  [1m[34mSELECT  "students".* FROM "students" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Started GET "/students" for ::1 at 2019-10-03 23:52:27 +0900
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  ↳ app/views/students/index.html.erb:13
+  Rendered students/index.html.erb within layouts/application (18.4ms)
+Completed 200 OK in 712ms (Views: 701.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/students/1" for ::1 at 2019-10-03 23:55:10 +0900
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:7
+  Rendering students/show.html.erb within layouts/application
+  Rendered students/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 290ms (Views: 270.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/students" for ::1 at 2019-10-03 23:55:14 +0900
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  ↳ app/views/students/index.html.erb:13
+  Rendered students/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 84ms (Views: 80.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/students/1" for ::1 at 2019-10-03 23:55:16 +0900
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:7
+  Rendering students/show.html.erb within layouts/application
+  Rendered students/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 323ms (Views: 315.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/students" for ::1 at 2019-10-03 23:58:58 +0900
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  ↳ app/views/students/index.html.erb:13
+  Rendered students/index.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 493ms (Views: 483.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/students/new" for ::1 at 2019-10-03 23:59:00 +0900
+Processing by StudentsController#new as HTML
+  Rendering students/new.html.erb within layouts/application
+  Rendered students/_form.html.erb (15.8ms)
+  Rendered students/new.html.erb within layouts/application (18.4ms)
+Completed 200 OK in 96ms (Views: 92.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/students" for ::1 at 2019-10-03 23:59:04 +0900
+Processing by StudentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DidSAMKq72K5Xd2yqsdsyWute16Q/IKZ+28Jl6pzAg2N+N0lVTW4yGExPAI5uHQAeu6nze1qqaPAndfTG/CxMg==", "student"=>{"name"=>"d", "number"=>"d", "subject_id"=>"d"}, "commit"=>"登録"}
+No template found for StudentsController#create, rendering head :no_content
+Completed 204 No Content in 278ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/students/new" for ::1 at 2019-10-04 00:00:40 +0900
+Processing by StudentsController#new as HTML
+  Rendering students/new.html.erb within layouts/application
+  Rendered students/_form.html.erb (1.8ms)
+  Rendered students/new.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 151ms (Views: 127.0ms | ActiveRecord: 3.7ms)
+
+
+Started POST "/students" for ::1 at 2019-10-04 00:00:44 +0900
+Processing by StudentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HQEA+lXC1SW6fz/3ZQCuUgG6xYGOMc6ed0we+EtLmFTaBjcdfSOb0vdtx5GRKKoOEJS0Ojw8dHBm0pvsMqVaVg==", "student"=>{"name"=>"d", "number"=>"d", "subject_id"=>"d"}, "commit"=>"登録"}
+Completed 500 Internal Server Error in 126ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `student_params' for #<StudentsController:0x000000000c5cd698>
+Did you mean?  student_path):
+  
+app/controllers/students_controller.rb:15:in `create'
+Started POST "/students" for ::1 at 2019-10-04 00:01:40 +0900
+Processing by StudentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HQEA+lXC1SW6fz/3ZQCuUgG6xYGOMc6ed0we+EtLmFTaBjcdfSOb0vdtx5GRKKoOEJS0Ojw8dHBm0pvsMqVaVg==", "student"=>{"name"=>"d", "number"=>"d", "subject_id"=>"d"}, "commit"=>"登録"}
+Completed 500 Internal Server Error in 183ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `student_params' for #<StudentsController:0x000000000c626ce8>
+Did you mean?  student_path):
+  
+app/controllers/students_controller.rb:15:in `create'
+Started POST "/students" for ::1 at 2019-10-04 00:02:51 +0900
+Processing by StudentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HQEA+lXC1SW6fz/3ZQCuUgG6xYGOMc6ed0we+EtLmFTaBjcdfSOb0vdtx5GRKKoOEJS0Ojw8dHBm0pvsMqVaVg==", "student"=>{"name"=>"d", "number"=>"d", "subject_id"=>"d"}, "commit"=>"登録"}
+Unpermitted parameter: :name
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/students_controller.rb:16
+  [1m[36mStudent Create (0.9ms)[0m  [1m[32mINSERT INTO "students" ("number", "subject_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["number", "d"], ["subject_id", "d"], ["created_at", "2019-10-03 15:02:51.625009"], ["updated_at", "2019-10-03 15:02:51.625009"]]
+  ↳ app/controllers/students_controller.rb:16
+  [1m[35m (0.5ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/students_controller.rb:16
+Completed 500 Internal Server Error in 35ms (ActiveRecord: 2.4ms)
+
+
+  
+ActiveRecord::NotNullViolation (SQLite3::ConstraintException: NOT NULL constraint failed: students.name: INSERT INTO "students" ("number", "subject_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)):
+  
+app/controllers/students_controller.rb:16:in `create'
+Started POST "/students" for ::1 at 2019-10-04 00:02:56 +0900
+Processing by StudentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HQEA+lXC1SW6fz/3ZQCuUgG6xYGOMc6ed0we+EtLmFTaBjcdfSOb0vdtx5GRKKoOEJS0Ojw8dHBm0pvsMqVaVg==", "student"=>{"name"=>"d", "number"=>"d", "subject_id"=>"d"}, "commit"=>"登録"}
+Unpermitted parameter: :name
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/students_controller.rb:16
+  [1m[36mStudent Create (0.6ms)[0m  [1m[32mINSERT INTO "students" ("number", "subject_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["number", "d"], ["subject_id", "d"], ["created_at", "2019-10-03 15:02:57.131248"], ["updated_at", "2019-10-03 15:02:57.131248"]]
+  ↳ app/controllers/students_controller.rb:16
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/students_controller.rb:16
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.7ms)
+
+
+  
+ActiveRecord::NotNullViolation (SQLite3::ConstraintException: NOT NULL constraint failed: students.name: INSERT INTO "students" ("number", "subject_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)):
+  
+app/controllers/students_controller.rb:16:in `create'
+Started POST "/students" for ::1 at 2019-10-04 00:03:08 +0900
+Processing by StudentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HQEA+lXC1SW6fz/3ZQCuUgG6xYGOMc6ed0we+EtLmFTaBjcdfSOb0vdtx5GRKKoOEJS0Ojw8dHBm0pvsMqVaVg==", "student"=>{"name"=>"d", "number"=>"d", "subject_id"=>"d"}, "commit"=>"登録"}
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/students_controller.rb:16
+  [1m[36mStudent Create (252.4ms)[0m  [1m[32mINSERT INTO "students" ("name", "number", "subject_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "d"], ["number", "d"], ["subject_id", "d"], ["created_at", "2019-10-03 15:03:09.008816"], ["updated_at", "2019-10-03 15:03:09.008816"]]
+  ↳ app/controllers/students_controller.rb:16
+  [1m[35m (82.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/students_controller.rb:16
+Redirected to http://localhost:3000/students
+Completed 302 Found in 366ms (ActiveRecord: 335.6ms)
+
+
+Started GET "/students" for ::1 at 2019-10-04 00:03:09 +0900
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  ↳ app/views/students/index.html.erb:13
+  Rendered students/index.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 90ms (Views: 82.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/students/new" for ::1 at 2019-10-04 00:03:18 +0900
+Processing by StudentsController#new as HTML
+  Rendering students/new.html.erb within layouts/application
+  Rendered students/_form.html.erb (1.1ms)
+  Rendered students/new.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 503ms (Views: 500.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/students" for ::1 at 2019-10-04 00:03:22 +0900
+Processing by StudentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fT1yAqqO3ZMRj+r40yYHe9z2vkRnIcKdG2TPmWASO17+4v0nPRGKOcnjC0hAWR+yzbVi1xq36acglhHd0ZGIYQ==", "student"=>{"name"=>"d", "number"=>"d", "subject_id"=>"d"}, "commit"=>"登録"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/students_controller.rb:16
+  [1m[36mStudent Create (4.0ms)[0m  [1m[32mINSERT INTO "students" ("name", "number", "subject_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "d"], ["number", "d"], ["subject_id", "d"], ["created_at", "2019-10-03 15:03:22.883714"], ["updated_at", "2019-10-03 15:03:22.883714"]]
+  ↳ app/controllers/students_controller.rb:16
+  [1m[35m (43.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/students_controller.rb:16
+Redirected to http://localhost:3000/students
+Completed 302 Found in 63ms (ActiveRecord: 47.4ms)
+
+
+Started GET "/students" for ::1 at 2019-10-04 00:03:22 +0900
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  ↳ app/views/students/index.html.erb:13
+  Rendered students/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 85ms (Views: 82.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/students" for ::1 at 2019-10-04 00:04:19 +0900
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  ↳ app/views/students/index.html.erb:13
+  Rendered students/index.html.erb within layouts/application (13.5ms)
+Completed 200 OK in 90ms (Views: 79.4ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/students/5" for ::1 at 2019-10-04 00:04:23 +0900
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:7
+  Rendering students/show.html.erb within layouts/application
+  Rendered students/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 153ms (Views: 68.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/students/5/edit" for ::1 at 2019-10-04 00:04:25 +0900
+Processing by StudentsController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:39
+  Rendering students/edit.html.erb within layouts/application
+  Rendered students/_form.html.erb (1.4ms)
+  Rendered students/edit.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 69ms (Views: 61.0ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/students/5" for ::1 at 2019-10-04 00:04:27 +0900
+Processing by StudentsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"A0Lrr68GWZwbimnt++x2E23l5IamPsRhqij04jTWwL7iPN3Y2PWaceNTKT2xbeVvsggX1gRGzPre3Jwtjn8uOQ==", "student"=>{"name"=>"d", "number"=>"d", "subject_id"=>"d"}, "commit"=>"登録", "id"=>"5"}
+No template found for StudentsController#update, rendering head :no_content
+Completed 204 No Content in 280ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/students/5/edit" for ::1 at 2019-10-04 00:05:45 +0900
+Processing by StudentsController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:45
+  Rendering students/edit.html.erb within layouts/application
+  Rendered students/_form.html.erb (1.8ms)
+  Rendered students/edit.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 109ms (Views: 93.2ms | ActiveRecord: 0.9ms)
+
+
+Started PATCH "/students/5" for ::1 at 2019-10-04 00:05:47 +0900
+Processing by StudentsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"taOLJHzsYfj3scUCdq01wHhCBMurIVg6r11cl2zirBJypLzDVA0vD7qjPWSChTGcaWx1cBks4tS+w9mDFQxuEA==", "student"=>{"name"=>"d", "number"=>"d", "subject_id"=>"d"}, "commit"=>"登録", "id"=>"5"}
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:45
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/students_controller.rb:29
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/students_controller.rb:29
+Redirected to http://localhost:3000/students
+Completed 302 Found in 17ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/students" for ::1 at 2019-10-04 00:05:47 +0900
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  ↳ app/views/students/index.html.erb:13
+  Rendered students/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 85ms (Views: 82.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/students" for ::1 at 2019-10-04 00:06:44 +0900
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  ↳ app/views/students/index.html.erb:13
+  Rendered students/index.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 419ms (Views: 408.8ms | ActiveRecord: 1.3ms)
+
+
+Started DELETE "/students/5" for ::1 at 2019-10-04 00:06:47 +0900
+Processing by StudentsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"2SToEwxN2gZceTzK0NvkvZwOH9xMJ3ZoMfYt45XCP6AeI9/0JKyU8RFrxKwk8+DhjSBuZ/4qzIYgaKj37Cz9og==", "id"=>"5"}
+  [1m[36mStudent Load (0.5ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:48
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/students_controller.rb:38
+  [1m[36mStudent Destroy (5.4ms)[0m  [1m[31mDELETE FROM "students" WHERE "students"."id" = ?[0m  [["id", 5]]
+  ↳ app/controllers/students_controller.rb:38
+  [1m[35m (43.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/students_controller.rb:38
+Redirected to http://localhost:3000/students
+Completed 302 Found in 64ms (ActiveRecord: 49.3ms)
+
+
+Started GET "/students" for ::1 at 2019-10-04 00:06:47 +0900
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  ↳ app/views/students/index.html.erb:13
+  Rendered students/index.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 80ms (Views: 76.8ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/students/4" for ::1 at 2019-10-04 00:06:50 +0900
+Processing by StudentsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"aXOjDXuQ9uFgWmAYfQIWnmfXLz95YVoZFQtu2mKfaFyudJTqU3G4Fi1ImH6JKhLCdvlehMts4PcElevOG3GqXg==", "id"=>"4"}
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:48
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/students_controller.rb:38
+  [1m[36mStudent Destroy (518.7ms)[0m  [1m[31mDELETE FROM "students" WHERE "students"."id" = ?[0m  [["id", 4]]
+  ↳ app/controllers/students_controller.rb:38
+  [1m[35m (47.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/students_controller.rb:38
+Redirected to http://localhost:3000/students
+Completed 302 Found in 582ms (ActiveRecord: 565.9ms)
+
+
+Started GET "/students" for ::1 at 2019-10-04 00:06:50 +0900
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  ↳ app/views/students/index.html.erb:13
+  Rendered students/index.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 78ms (Views: 75.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2019-10-04 00:06:59 +0900
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 74ms (Views: 71.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/students/new" for ::1 at 2019-10-04 00:07:03 +0900
+Processing by StudentsController#new as HTML
+  Rendering students/new.html.erb within layouts/application
+  Rendered students/_form.html.erb (1.7ms)
+  Rendered students/new.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 73ms (Views: 70.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-05 09:03:25 +0900
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 1163ms (Views: 1152.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/subjects" for ::1 at 2019-10-05 09:03:34 +0900
+Processing by SubjectsController#index as HTML
+  Rendering subjects/index.html.erb within layouts/application
+  [1m[36mSubject Load (0.5ms)[0m  [1m[34mSELECT "subjects".* FROM "subjects"[0m
+  ↳ app/views/subjects/index.html.erb:13
+  Rendered subjects/index.html.erb within layouts/application (64.4ms)
+Completed 200 OK in 224ms (Views: 191.6ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/students" for ::1 at 2019-10-05 09:03:42 +0900
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.5ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  ↳ app/views/students/index.html.erb:13
+  Rendered students/index.html.erb within layouts/application (17.7ms)
+Completed 200 OK in 145ms (Views: 114.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/students/new" for ::1 at 2019-10-05 09:03:45 +0900
+Processing by StudentsController#new as HTML
+  Rendering students/new.html.erb within layouts/application
+  Rendered students/_form.html.erb (39.0ms)
+  Rendered students/new.html.erb within layouts/application (47.9ms)
+Completed 200 OK in 639ms (Views: 142.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/students" for ::1 at 2019-10-05 09:03:56 +0900
+Processing by StudentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"soOnFhGf44C3z/TzfW7qBbeQwByAfIqkrdk1AtJmc3fpdnSrbenssp0Un9/JV9S1cFIcrom2DUoAfMFBbYyktw==", "student"=>{"name"=>"aika", "number"=>"1", "subject_id"=>"1"}, "commit"=>"登録"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/students_controller.rb:16
+  [1m[36mStudent Create (3.7ms)[0m  [1m[32mINSERT INTO "students" ("name", "number", "subject_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "aika"], ["number", "1"], ["subject_id", "1"], ["created_at", "2019-10-05 00:03:56.845613"], ["updated_at", "2019-10-05 00:03:56.845613"]]
+  ↳ app/controllers/students_controller.rb:16
+  [1m[35m (99.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/students_controller.rb:16
+Redirected to http://localhost:3000/students
+Completed 302 Found in 127ms (ActiveRecord: 103.1ms)
+
+
+Started GET "/students" for ::1 at 2019-10-05 09:03:56 +0900
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  ↳ app/views/students/index.html.erb:13
+  Rendered students/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 108ms (Views: 105.6ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/students/6" for ::1 at 2019-10-05 09:04:01 +0900
+Processing by StudentsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"2aa5a+vBa7K+mvOPxayxdibwbNJyabA7aL9CM3adLCd4O6zmsShTJXYURH+HDhZsGtE8N9GRP/SQflKWU8qBfg==", "id"=>"6"}
+  [1m[36mStudent Load (0.6ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:48
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/students_controller.rb:38
+  [1m[36mStudent Destroy (7.6ms)[0m  [1m[31mDELETE FROM "students" WHERE "students"."id" = ?[0m  [["id", 6]]
+  ↳ app/controllers/students_controller.rb:38
+  [1m[35m (103.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/students_controller.rb:38
+Redirected to http://localhost:3000/students
+Completed 302 Found in 146ms (ActiveRecord: 112.0ms)
+
+
+Started GET "/students" for ::1 at 2019-10-05 09:04:01 +0900
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.5ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  ↳ app/views/students/index.html.erb:13
+  Rendered students/index.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 143ms (Views: 136.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2019-10-05 09:04:08 +0900
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 179ms (Views: 173.6ms | ActiveRecord: 0.0ms)
+
+

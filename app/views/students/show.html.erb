@@ -1,0 +1,14 @@
+<h1>生徒詳細</h1>
+<table border="1">
+  <tr>
+    <th>生徒氏名</th>
+    <th>学籍番号</th>
+    <th>学科名称</th>
+  </tr>
+  <tr>
+    <td><%= @student.name %></td>
+    <td><%= @student.number %></td>
+    <td><%= @student.subject_id %></td>
+  </tr>
+</table>
+<%= link_to "戻る", :back %>

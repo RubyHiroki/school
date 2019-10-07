@@ -1,0 +1,26 @@
+<h1>生徒一覧</h1>
+<%= link_to "新規登録", new_student_path %>
+<% if flash[:notice] %>
+  <p><%= flash[:notice] %></p>
+<% end %>
+<table border="1">
+  <tr>
+    <th>生徒氏名</th>
+    <th>学籍番号</th>
+    <th>学科</th>
+    <th>操作</th>
+  </tr>
+    <% @students.each do |student| %>
+      <tr>
+      <td><%= student.name %></td>
+      <td><%= student.number %></td>
+      <td><%= student.subject_id %></td>
+      <td>
+        <%= link_to "詳細", student %>
+        <%= link_to "編集", edit_student_path(student) %>
+        <%= link_to "削除", student_path(student), :method => :delete %>
+      </td>
+      </tr>
+    <% end %>
+</table>
+<%= link_to "トップへ戻る", root_path %>

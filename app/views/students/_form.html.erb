@@ -1,0 +1,15 @@
+<%= form_for @student do |f| %>
+    <p>
+    <%= f.label(:name, "生徒氏名") %>
+    <%= f.text_field :name %>
+    </p>
+    <p>
+    <%= f.label :number, "学籍番号" %>
+    <%= f.text_field :number %>
+    </p>
+    <p>
+    <%= f.label :subject_id, "学科ID" %>
+    <%= f.text_field :subject_id %>
+    </p>
+    <%= f.submit "登録" %>
+<% end %>

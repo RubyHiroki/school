@@ -1,0 +1,26 @@
+<h1>学科一覧</h1>
+<%= link_to "新規登録", new_subject_path %>
+<% if flash[:notice] %>
+  <p><%= flash[:notice] %></p>
+<% end %>
+<table border="1">
+  <tr>
+    <th>学科</th>
+    <th>学科説明</th>
+    <th>担当教師</th>
+    <th>操作</th>
+  </tr>
+    <% @subjects.each do |subject| %>
+      <tr>
+      <td><%= subject.department %></td>
+      <td><%= subject.content %></td>
+      <td><%= subject.teacher %></td>
+      <td>
+        <%= link_to "詳細", subject %>
+        <%= link_to "編集", edit_subject_path(subject) %>
+        <%= link_to "削除", subject_path(subject), :method => :delete %>
+      </td>
+      </tr>
+    <% end %>
+</table>
+<%= link_to "トップへ戻る", root_path %>

@@ -1,0 +1,14 @@
+<h1>学科詳細</h1>
+<table border="1">
+  <tr>
+    <th>学科</th>
+    <th>学科説明</th>
+    <th>担当教師</th>
+  </tr>
+  <tr>
+    <td><%= @subject.department %></td>
+    <td><%= @subject.content %></td>
+    <td><%= @subject.teacher %></td>
+  </tr>
+</table>
+<%= link_to "戻る", :back %>
